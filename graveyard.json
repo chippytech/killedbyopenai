@@ -120,11 +120,19 @@
         "link": "https://developers.openai.com/api/docs/deprecations#2025-09-26-legacy-gpt-model-snapshots"
     },
     {
-        "name": "DALL·E 2",
+        "name": "DALL·E 2 (API)",
         "dateOpen": "2022-04-06",
         "dateClose": "2026-05-12",
         "type": "model",
         "description": "The model that sparked the AI image generation trend. Retired alongside DALL-E 3. Recommended replacement: gpt-image-1-mini.",
         "link": "https://developers.openai.com/api/docs/deprecations#2025-11-14-dall-e-model-snapshots"
-    }
+    },
+    {
+        "name": "DALL·E 2 (Labs Web App)",
+        "dateOpen": "2022-04-06",
+        "dateClose": "2024-02-21",
+        "type": "service",
+        "description": "The original web interface for DALL·E 2. OpenAI stopped accepting new customers and credit purchases on this date, directing all web users to DALL·E 3 within ChatGPT. Recommended replacement: ChatGPT (DALL·E 3).",
+        "link": "https://www.pcmag.com/news/openai-shuts-down-dall-e-2-image-generator"
+   }
 ]
