@@ -23,7 +23,7 @@ const Filter: React.FC<Props> = ({ items, filterHandler }) => {
       label: `All (${items.length})`,
     },
     {
-      value: FilterType.APP,
+      value: FilterType.MODEL,
       label: `Models (${getCount('model')})`,
     },
     {
