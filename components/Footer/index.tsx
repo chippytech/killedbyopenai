@@ -12,10 +12,6 @@ const SocialLink: FC<{ url: string; imgSrc: string; altText: string }> = ({
     imgSrc,
     altText,
 }) => {
-    const style = {
-        border: 'none',
-    };
-
     return (
         <Link href={url} passHref>
             <a
@@ -56,7 +52,7 @@ const Title = styled.div(() => css({
 const FooterTitle = styled.div(() => css({
     alignItems: 'center',
     display: 'flex',
-    justifyContent: 'center',
+    justifyinit: 'center',
     paddingBottom: '20px',
 }));
 
@@ -80,61 +76,58 @@ const Footer = () => (
                     <div css={{
                         marginRight: '10px',
                     }}>
+                        {/* Swapped to a generic tombstone or your logo asset */}
                         <img height="60px" width="60px" src='https://static.killedbygoogle.com/com/tombstone-alt.svg' alt="Tombstone" />
                     </div>
-                    <Title>Killed by Google</Title>
+                    <Title>Killed by OpenAI</Title>
                 </FooterTitle>
                 <div>
                     <p>
-                        Killed by Google is the Google graveyard; a free and open source
-                        list of discontinued Google services, products, devices, and apps.
+                        Killed by OpenAI is the OpenAI graveyard; a free and open source
+                        list of discontinued OpenAI models, services, and APIs.
                         We aim to be a source of factual information about the history
-                        surrounding Google&apos;s dead projects.
-          </p>
+                        surrounding OpenAI&apos;s dead projects.
+                    </p>
                     <p>
                         <a
-                            href="https://github.com/codyogden/killedbygoogle/graphs/contributors"
+                            href="https://github.com/chippytech/killedbyopenai/graphs/contributors"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
                             Contributors
-            </a>
-            &nbsp;from around the world help compile, research, and maintain the
-            information about dying and dead Google products. You can join the
-            discussion on&nbsp;
-            <a href="https://github.com/codyogden/killedbygoogle">GitHub</a>. A project
-            by&nbsp;
-            <a
-                            href="https://codyogden.com"
+                        </a>
+                        &nbsp;help research and maintain the information about 
+                        deprecated models and sudden API sunsets. You can join the
+                        discussion on&nbsp;
+                        <a href="https://github.com/chippytech/killedbyopenai">GitHub</a>. A project
+                        by&nbsp;
+                        <a
+                            href="https://chippytime.com"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            Cody Ogden
-            </a>
-            .
-          </p>
+                            ChippyTime
+                        </a>
+                        .
+                    </p>
                     <p>
-                        Press inquiries and other assorted death threats?
-            <br />
-            Throw a&nbsp;
-            <a href="mailto:knife@killedbygoogle.com">
-                            knife@killedbygoogle.com
-            </a>
-            .
-          </p>
+                        Press inquiries and compute-related complaints?
+                        <br />
+                        Send an email to&nbsp;
+                        <a href="mailto:hello@chippytime.com">
+                            hello@chippytime.com
+                        </a>
+                        .
+                    </p>
                 </div>
                 <CopyNotice>
-                    <a href="https://github.com/codyogden/killedbygoogle/blob/main/LICENSE">
-                        &copy; 2023 Cody Ogden.
-          </a>
-          &nbsp;-&nbsp;
-          <a href="https://analytics.kbg.rip" target="_blank" rel="noopener noreferrer">
-                        Analytics
-          </a>
+                    <a href="https://github.com/chippytech/killedbyopenai/blob/main/LICENSE">
+                        &copy; 2026 ChippyTime Limited Group.
+                    </a>
                 </CopyNotice>
                 <SocialWrapper>
                     <SocialLink
-                        url="https://github.com/codyogden/killedbygoogle"
+                        url="https://github.com/chippytech/killedbyopenai"
                         altText="GitHub"
                         imgSrc='https://static.killedbygoogle.com/com/github.svg'
                     />
@@ -143,4 +136,5 @@ const Footer = () => (
         </FooterContainer>
     </>
 );
+
 export default Footer;
