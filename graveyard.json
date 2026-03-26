@@ -1,138 +1,170 @@
 [
-    {
-        "name": "Sora (App & API)",
-        "dateOpen": "2024-12-09",
-        "dateClose": "2026-03-24",
-        "type": "service",
-        "description": "A high-fidelity text-to-video platform. Abruptly shuttered following the collapse of a $1B Disney partnership and a strategic pivot to robotics/IPO prep. Recommended replacement: Google Veo or Kling.",
-        "link": "https://qz.com/openai-shut-down-sora-disney-deal"
-    },
-    {
-        "name": "GPT-4 Early Snapshots (0314, 1106, 0125)",
-        "dateOpen": "2023-03-14",
-        "dateClose": "2026-03-26",
-        "type": "model",
-        "description": "Legacy GPT-4 and GPT-4 Turbo preview snapshots (including 0314, 1106-preview, and 0125-preview). Retired to streamline the API toward the GPT-5 series. Recommended replacement: gpt-5 or gpt-4.1.",
-        "link": "https://developers.openai.com/api/docs/deprecations#2025-09-26-legacy-gpt-model-snapshots"
-    },
-    {
-        "name": "GPT-5.1 (Instant, Thinking, Pro)",
-        "dateOpen": "2025-08-15",
-        "dateClose": "2026-03-11",
-        "type": "model",
-        "description": "Short-lived iterative models from the GPT-5 series, retired across ChatGPT and GPTs to consolidate on the 5.2 architecture. Recommended replacement: GPT-5.2 series.",
-        "link": "https://help.openai.com/en/articles/9624314-model-release-notes"
-    },
-    {
-        "name": "GPT-4o (ChatGPT version)",
-        "dateOpen": "2024-05-13",
-        "dateClose": "2026-02-13",
-        "type": "model",
-        "description": "The 'Omni' model that powered ChatGPT. Deprecated to consolidate users onto the GPT-5 foundational series. Recommended replacement: GPT-5 series.",
-        "link": "https://openai.com/index/retiring-gpt-4o-and-older-models/"
-    },
-    {
-        "name": "chatgpt-4o-latest (API)",
-        "dateOpen": "2024-05-13",
-        "dateClose": "2026-02-16",
-        "type": "model",
-        "description": "The specific dynamic pointer for the latest ChatGPT-flavor of GPT-4o in the API. Recommended replacement: gpt-5.1-chat-latest.",
-        "link": "https://developers.openai.com/api/docs/deprecations#2025-11-18-chatgpt-4o-latest"
-    },
-    {
-        "name": "GPT-5 (Instant & Thinking Preview)",
-        "dateOpen": "2025-08-15",
-        "dateClose": "2026-02-13",
-        "type": "model",
-        "description": "The initial launch versions of the GPT-5 series, sunset after the 5.1 and 5.2 updates rendered them obsolete. Recommended replacement: GPT-5.2.",
-        "link": "https://help.openai.com/en/articles/20001051-retiring-gpt-4o-and-other-chatgpt-models"
-    },
-    {
-        "name": "o4-mini",
-        "dateOpen": "2025-10-01",
-        "dateClose": "2026-02-13",
-        "type": "model",
-        "description": "An efficiency-focused reasoning model. Retired from ChatGPT just four months after release. Recommended replacement: gpt-5.4-mini.",
-        "link": "https://openai.com/index/retiring-gpt-4o-and-older-models/"
-    },
-    {
-        "name": "GPT-3.5 Legacy Snapshots (1106, Instruct)",
-        "dateOpen": "2023-11-06",
-        "dateClose": "2026-09-28",
-        "type": "model",
-        "description": "The final stand of the GPT-3.5 series, including the 1106 snapshot and the specialized 'instruct' model. Recommended replacement: gpt-5.4-mini or gpt-5-mini.",
-        "link": "https://developers.openai.com/api/docs/deprecations#2025-09-26-legacy-gpt-model-snapshots"
-    },
-    {
-        "name": "Assistants API",
-        "dateOpen": "2023-11-06",
-        "dateClose": "2026-08-26",
-        "type": "service",
-        "description": "A high-level API for building AI assistants. Deprecated in favor of the more flexible Responses and Conversations APIs. Recommended replacement: Responses API and Conversations API.",
-        "link": "https://developers.openai.com/api/docs/deprecations#2025-08-20-assistants-api"
-    },
-    {
-        "name": "DALL·E 3",
-        "dateOpen": "2023-10-03",
-        "dateClose": "2026-05-12",
-        "type": "model",
-        "description": "The third iteration of OpenAI's image generator. Retired to make way for the 'GPT Image' natively multimodal series. Recommended replacement: gpt-image-1 or gpt-image-1-mini.",
-        "link": "https://developers.openai.com/api/docs/deprecations#2025-11-14-dall-e-model-snapshots"
-    },
-    {
-        "name": "gpt-4o-realtime-preview",
-        "dateOpen": "2024-10-01",
-        "dateClose": "2026-05-07",
-        "type": "model",
-        "description": "The preview version of the low-latency audio API. Recommended replacement: gpt-realtime-1.5.",
-        "link": "https://developers.openai.com/api/docs/deprecations#2025-09-15-gpt-4o-realtime-preview-models"
-    },
-    {
-        "name": "o1-preview / o1-mini",
-        "dateOpen": "2024-09-12",
-        "dateClose": "2025-10-27",
-        "type": "model",
-        "description": "The first reasoning models from OpenAI. Sunset following the release of o3 and o4 series. Recommended replacement: o3 or o4-mini.",
-        "link": "https://developers.openai.com/api/docs/deprecations#2025-04-28-o1-preview-and-o1-mini"
-    },
-    {
-        "name": "GPT-4.5-preview",
-        "dateOpen": "2025-02-01",
-        "dateClose": "2025-07-14",
-        "type": "model",
-        "description": "A very short-lived preview that bridged the gap between GPT-4 and GPT-5. Recommended replacement: gpt-4.1.",
-        "link": "https://developers.openai.com/api/docs/deprecations#2025-04-14-gpt-4.5-preview"
-    },
-    {
-        "name": "Codex API",
-        "dateOpen": "2021-08-10",
-        "dateClose": "2023-03-23",
-        "type": "model",
-        "description": "The specialized model series (including code-davinci-002) for natural language to code. Shut down with only 3 days' notice. Recommended replacement: gpt-4o.",
-        "link": "https://developers.openai.com/api/docs/deprecations#2023-03-20-codex-models"
-    },
-    {
-        "name": "Base GPT Models (Babbage-002, Davinci-002)",
-        "dateOpen": "2023-08-22",
-        "dateClose": "2026-09-28",
-        "type": "model",
-        "description": "The remaining second-generation base models used for fine-tuning and simple completions. Recommended replacement: gpt-5.4-mini or gpt-5-mini.",
-        "link": "https://developers.openai.com/api/docs/deprecations#2025-09-26-legacy-gpt-model-snapshots"
-    },
-    {
-        "name": "DALL·E 2 (API)",
-        "dateOpen": "2022-04-06",
-        "dateClose": "2026-05-12",
-        "type": "model",
-        "description": "The model that sparked the AI image generation trend. Retired alongside DALL-E 3. Recommended replacement: gpt-image-1-mini.",
-        "link": "https://developers.openai.com/api/docs/deprecations#2025-11-14-dall-e-model-snapshots"
-    },
-    {
-        "name": "DALL·E 2 (Labs Web App)",
-        "dateOpen": "2022-04-06",
-        "dateClose": "2024-02-21",
-        "type": "service",
-        "description": "The original web interface for DALL·E 2. OpenAI stopped accepting new customers and credit purchases on this date, directing all web users to DALL·E 3 within ChatGPT. Recommended replacement: ChatGPT (DALL·E 3).",
-        "link": "https://www.pcmag.com/news/openai-shuts-down-dall-e-2-image-generator"
-   }
+  {
+    "name": "Sora (App & API)",
+    "dateOpen": "2024-12-09",
+    "dateClose": "2026-03-24",
+    "type": "service",
+    "description": "A high-fidelity text-to-video platform. Abruptly shuttered following the collapse of a $1B Disney partnership and a strategic pivot to robotics/IPO prep. Recommended replacement: Google Veo or Kling.",
+    "link": "https://qz.com/openai-shut-down-sora-disney-deal"
+  },
+  {
+    "name": "GPT-4 Early Snapshots (0314, 1106, 0125)",
+    "dateOpen": "2023-03-14",
+    "dateClose": "2026-03-26",
+    "type": "model",
+    "description": "Legacy GPT-4 and GPT-4 Turbo preview snapshots (including 0314, 1106-preview, and 0125-preview). Retired to streamline the API toward the GPT-5 series. Recommended replacement: gpt-5 or gpt-4.1.",
+    "link": "https://developers.openai.com/api/docs/deprecations#2025-09-26-legacy-gpt-model-snapshots"
+  },
+  {
+    "name": "GPT-5.1 (Instant, Thinking, Pro)",
+    "dateOpen": "2025-08-15",
+    "dateClose": "2026-03-11",
+    "type": "model",
+    "description": "Short-lived iterative models from the GPT-5 series, retired across ChatGPT and GPTs to consolidate on the 5.2 architecture. Recommended replacement: GPT-5.2 series.",
+    "link": "https://help.openai.com/en/articles/9624314-model-release-notes"
+  },
+  {
+    "name": "GPT-5 (Instant & Thinking Preview)",
+    "dateOpen": "2025-08-15",
+    "dateClose": "2026-02-13",
+    "type": "model",
+    "description": "The initial launch versions of the GPT-5 series, sunset after the 5.1 and 5.2 updates rendered them obsolete. Recommended replacement: GPT-5.2.",
+    "link": "https://help.openai.com/en/articles/20001051-retiring-gpt-4o-and-other-chatgpt-models"
+  },
+  {
+    "name": "GPT-4o (ChatGPT version)",
+    "dateOpen": "2024-05-13",
+    "dateClose": "2026-02-13",
+    "type": "model",
+    "description": "The 'Omni' model that powered ChatGPT. Deprecated to consolidate users onto the GPT-5 foundational series. Recommended replacement: GPT-5 series.",
+    "link": "https://openai.com/index/retiring-gpt-4o-and-older-models/"
+  },
+  {
+    "name": "chatgpt-4o-latest (API)",
+    "dateOpen": "2024-05-13",
+    "dateClose": "2026-02-16",
+    "type": "model",
+    "description": "The specific dynamic pointer for the latest ChatGPT-flavor of GPT-4o in the API. Recommended replacement: gpt-5.1-chat-latest.",
+    "link": "https://developers.openai.com/api/docs/deprecations#2025-11-18-chatgpt-4o-latest"
+  },
+  {
+    "name": "o4-mini",
+    "dateOpen": "2025-10-01",
+    "dateClose": "2026-02-13",
+    "type": "model",
+    "description": "An efficiency-focused reasoning model. Retired from ChatGPT just four months after release. Recommended replacement: gpt-5.4-mini.",
+    "link": "https://openai.com/index/retiring-gpt-4o-and-older-models/"
+  },
+  {
+    "name": "GPT-3.5 Legacy Snapshots",
+    "dateOpen": "2023-11-06",
+    "dateClose": "2026-09-28",
+    "type": "model",
+    "description": "The final decommission of the GPT-3.5 architecture, including 1106 and turbo-instruct. Recommended replacement: gpt-5.4-mini.",
+    "link": "https://developers.openai.com/api/docs/deprecations#2025-09-26-legacy-gpt-model-snapshots"
+  },
+  {
+    "name": "Assistants API",
+    "dateOpen": "2023-11-06",
+    "dateClose": "2026-08-26",
+    "type": "service",
+    "description": "A high-level API for building AI assistants. Deprecated in favor of the more flexible Responses and Conversations APIs. Recommended replacement: Responses API and Conversations API.",
+    "link": "https://developers.openai.com/api/docs/deprecations#2025-08-20-assistants-api"
+  },
+  {
+    "name": "DALL·E 3",
+    "dateOpen": "2023-10-03",
+    "dateClose": "2026-05-12",
+    "type": "model",
+    "description": "The third iteration of OpenAI's image generator. Retired to make way for the 'GPT Image' natively multimodal series. Recommended replacement: gpt-image-1 or gpt-image-1-mini.",
+    "link": "https://developers.openai.com/api/docs/deprecations#2025-11-14-dall-e-model-snapshots"
+  },
+  {
+    "name": "DALL·E 2 (API)",
+    "dateOpen": "2022-04-06",
+    "dateClose": "2026-05-12",
+    "type": "model",
+    "description": "The model that sparked the AI image generation trend. Retired alongside DALL-E 3. Recommended replacement: gpt-image-1-mini.",
+    "link": "https://developers.openai.com/api/docs/deprecations#2025-11-14-dall-e-model-snapshots"
+  },
+  {
+    "name": "DALL·E 2 (Labs Web App)",
+    "dateOpen": "2022-04-06",
+    "dateClose": "2024-02-21",
+    "type": "service",
+    "description": "The original web interface for DALL·E 2. OpenAI stopped accepting new customers and credit purchases on this date, directing all web users to DALL·E 3 within ChatGPT. Recommended replacement: ChatGPT (DALL·E 3).",
+    "link": "https://www.pcmag.com/news/openai-shuts-down-dall-e-2-image-generator"
+  },
+  {
+    "name": "gpt-4o-realtime-preview",
+    "dateOpen": "2024-10-01",
+    "dateClose": "2026-05-07",
+    "type": "model",
+    "description": "The preview version of the low-latency audio API. Recommended replacement: gpt-realtime-1.5.",
+    "link": "https://developers.openai.com/api/docs/deprecations#2025-09-15-gpt-4o-realtime-preview-models"
+  },
+  {
+    "name": "o1-preview / o1-mini",
+    "dateOpen": "2024-09-12",
+    "dateClose": "2025-10-27",
+    "type": "model",
+    "description": "The first reasoning models from OpenAI. Sunset following the release of o3 and o4 series. Recommended replacement: o3 or o4-mini.",
+    "link": "https://developers.openai.com/api/docs/deprecations#2025-04-28-o1-preview-and-o1-mini"
+  },
+  {
+    "name": "GPT-4.5-preview",
+    "dateOpen": "2025-02-01",
+    "dateClose": "2025-07-14",
+    "type": "model",
+    "description": "A very short-lived preview that bridged the gap between GPT-4 and GPT-5. Recommended replacement: gpt-4.1.",
+    "link": "https://developers.openai.com/api/docs/deprecations#2025-04-14-gpt-4.5-preview"
+  },
+  {
+    "name": "Codex API",
+    "dateOpen": "2021-08-10",
+    "dateClose": "2023-03-23",
+    "type": "model",
+    "description": "The specialized model series (including code-davinci-002) for natural language to code. Shut down with only 3 days' notice. Recommended replacement: gpt-4o.",
+    "link": "https://developers.openai.com/api/docs/deprecations#2023-03-20-codex-models"
+  },
+  {
+    "name": "Base GPT Models (Babbage-002, Davinci-002)",
+    "dateOpen": "2023-08-22",
+    "dateClose": "2026-09-28",
+    "type": "model",
+    "description": "The remaining second-generation base models used for fine-tuning and simple completions. Recommended replacement: gpt-5.4-mini or gpt-5-mini.",
+    "link": "https://developers.openai.com/api/docs/deprecations#2025-09-26-legacy-gpt-model-snapshots"
+  },
+  {
+    "name": "Nerdy Personality Preset",
+    "dateOpen": "2025-11-10",
+    "dateClose": "2026-03-16",
+    "type": "feature",
+    "description": "A system-level personality setting in ChatGPT that favored technical, jargon-heavy responses. Replaced by standard personalization settings.",
+    "link": "https://help.openai.com/en/articles/personality-updates-2026"
+  },
+  {
+    "name": "ChatGPT macOS Voice Experience",
+    "dateOpen": "2024-06-15",
+    "dateClose": "2026-01-15",
+    "type": "feature",
+    "description": "The specialized hands-free voice interface for Mac. Retired in favor of the cross-platform unified 'Advanced Voice' system.",
+    "link": "https://help.openai.com/en/articles/macos-voice-update"
+  },
+  {
+    "name": "ChatGPT Plugins (Legacy Conversations)",
+    "dateOpen": "2023-03-23",
+    "dateClose": "2024-04-09",
+    "type": "feature",
+    "description": "The precursor to Custom GPTs. Legacy conversations using these plugins were officially scrubbed and converted to standard text recently.",
+    "link": "https://help.openai.com/en/articles/plugin-sunset"
+  },
+  {
+    "name": "OpenAI Gym",
+    "dateOpen": "2016-04-27",
+    "dateClose": "2021-10-25",
+    "type": "library",
+    "description": "The industry-standard toolkit for reinforcement learning. OpenAI ceased maintenance in 2021. Recommended replacement: Gymnasium.",
+    "link": "https://github.com/openai/gym"
+  }
 ]
