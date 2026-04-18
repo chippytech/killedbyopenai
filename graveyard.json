@@ -7,6 +7,31 @@
     "description": "A high-fidelity text-to-video platform. Abruptly shuttered following the collapse of a $1B Disney partnership and a strategic pivot to robotics/IPO prep. Recommended replacement: Google Veo or Kling.",
     "link": "https://qz.com/openai-shut-down-sora-disney-deal"
   },
+  
+  {
+    "name": "GPT-3.5 Turbo (ChatGPT)",
+    "dateOpen": "2023-03-01",
+    "dateClose": "2025-07-14",
+    "type": "model",
+    "description": "The model that brought AI to the masses. It was the default free-tier engine for over two years before being fully replaced by 'mini' architecture models to save on compute. Recommended replacement: gpt-4.1-mini or gpt-5.4-mini.",
+    "link": "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/"
+  },
+  {
+    "name": "GPT-4.1 (ChatGPT Version)",
+    "dateOpen": "2025-04-14",
+    "dateClose": "2026-02-13",
+    "type": "model",
+    "description": "The 'efficient' flagship that famously replaced GPT-4.5. While loved by developers for its logic, it was sunset in the ChatGPT interface less than a year later to force migration to the GPT-5 ecosystem. Recommended replacement: GPT-5.4.",
+    "link": "https://help.openai.com/en/articles/20001051-retiring-gpt-4o-and-other-chatgpt-models"
+  },
+  {
+    "name": "Sky (Voice Persona)",
+    "dateOpen": "2023-09-25",
+    "dateClose": "2024-05-20",
+    "type": "feature",
+    "description": "One of the original five ChatGPT voices. Abruptly removed following a legal dispute and public outcry from Scarlett Johansson over unauthorized vocal resemblance. Recommended replacement: Juniper or Cove.",
+    "link": "https://openai.com/index/how-the-voices-around-chatgpt-were-chosen/"
+  },
   {
     "name": "GPT-4 Early Snapshots (0314, 1106, 0125)",
     "dateOpen": "2023-03-14",
