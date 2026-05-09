@@ -1,5 +1,13 @@
 [
   {
+    "name": "AI Fine-Tuning",
+    "dateOpen": "2023-08-22",
+    "dateClose": "2025-06-15",
+    "type": "service",
+    "description": "Custom model training services for developers. Winding down as OpenAI shifts focus toward 'reasoning' models and RAG-based architectures, significantly impacting the strategy for AI startups. Recommended replacement: Anyscale or Together AI.",
+    "link": "https://startupfortune.com/openai-is-winding-down-fine-tuning-and-that-changes-the-startup-playbook/"
+  },
+  {
     "name": "Sora (App & API)",
     "dateOpen": "2024-12-09",
     "dateClose": "2026-03-24",
