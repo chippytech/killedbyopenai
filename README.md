@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://static.killedbyOpenAI.com/com/tombstone.png" alt="tombstone" style="height: 80px; width: 80px; padding: 0 20px;">
+  <img src="https://static.killedbygoogle.com/com/tombstone.png" alt="tombstone" style="height: 80px; width: 80px; padding: 0 20px;">
   <h1>Killed by OpenAI</h1>
   <p>A tribute and log of beloved products and services killed by OpenAI.</p>
 </div>
@@ -35,12 +35,12 @@ For code contributions outside of `graveyard.json`, check out the [Contributing 
 ### Editorial Guidelines
 
 #### Description
-The description should be a single sentence describing the product. It should begin with the products name. For example, "OpenAI Reader was an RSS/Atom feed aggregator." It will be attached to a generated sentence like "Killed about 5 years ago, OpenAI Reader was an RSS/Atom feed aggregator."
+The description should be a single sentence describing the product. It should begin with the product's name. For example, "OpenAI GPT-4 was an AI large language model." It will be attached to a generated sentence like "Killed about 5 years ago, OpenAI GPT-4 was an AI large language model."
 
-Please be respectful, only use past tense.
+Please be respectful and only use the past tense.
 
 #### Link
 Link should be a resource that mentions the discontinuation date and talks about the product. Links to Wikipedia or a news organization should be prioritized. **Please do not use OpenAI Support articles, linking to the product's URL, the product's marketing URL, or other OpenAI-provided links.** OpenAI removes these links quickly after a service is ended.
 
 #### Type
-The type should be either `app`, `service`, or `hardware` as a string.
+The type should be either  `service`, or `model` as a string.
