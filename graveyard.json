@@ -1,12 +1,102 @@
 [
   {
-  "name": "Agent Builder",
-  "dateOpen": "2025-10-06",
-  "dateClose": "2026-11-30",
-  "type": "service",
-  "description": "OpenAI's visual agent-building product for developers. Deprecated on June 3, 2026, with shutdown scheduled for November 30, 2026. ChatKit remains available. Recommended replacement: Agents SDK or ChatGPT Workspace Agents.",
-  "link": "https://developers.openai.com/api/docs/deprecations#2026-06-03-agent-builder"
-},
+    "name": "Evals Platform",
+    "dateOpen": "2024-12-17",
+    "dateClose": "2026-11-30",
+    "type": "service",
+    "category": "API & Dev",
+    "status": "killed",
+    "description": "Dashboard and API for running model evals. Deprecated June 3, 2026; goes read-only October 31, 2026, and shuts down November 30, 2026.",
+    "link": "https://developers.openai.com/api/docs/deprecations#2026-06-03-evals-platform"
+  },
+  {
+    "name": "ChatGPT Pulse",
+    "dateOpen": "2025-09-25",
+    "dateClose": "2026-07-01",
+    "type": "service",
+    "category": "Features",
+    "status": "killed",
+    "description": "Proactive daily briefings in ChatGPT Pro that researched overnight and surfaced personalized update cards. Launched in September 2025; OpenAI is sunsetting it and pointing users to scheduled tasks instead.",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/951840/openai-is-sunsetting-pulse-which-showed-you-custom-daily-digests-in-chatgpt"
+  },
+  {
+    "name": "ChatGPT Plugins",
+    "dateOpen": "2023-03-23",
+    "dateClose": "2024-04-09",
+    "type": "service",
+    "category": "Features",
+    "status": "killed",
+    "description": "Third-party tool integrations for ChatGPT. The beta was wound down in favor of GPTs and Actions, then fully shut down April 9, 2024.",
+    "link": "https://community.openai.com/t/why-is-the-plugin-store-going-away/500712"
+  },
+  {
+    "name": "Videos API (Sora 2)",
+    "dateOpen": "2025-10-06",
+    "dateClose": "2026-09-24",
+    "type": "service",
+    "category": "API & Dev",
+    "status": "killed",
+    "description": "Programmatic access to the Sora 2 video models. Deprecated March 24, 2026; full shutdown scheduled for September 24, 2026.",
+    "link": "https://developers.openai.com/api/docs/deprecations#2026-03-24-sora-2-video-generation-models-and-videos-api"
+  },
+  {
+    "name": "Operator",
+    "dateOpen": "2025-01-23",
+    "dateClose": "2025-09-01",
+    "type": "service",
+    "category": "Products",
+    "status": "killed",
+    "description": "Research-preview browsing agent at operator.chatgpt.com. Folded into ChatGPT Agent in July 2025, and the standalone site was sunset weeks later.",
+    "link": "https://web.archive.org/web/20250804152057/https://help.openai.com/en/articles/10561834-operator-release-notes"
+  },
+  {
+    "name": "Canvas",
+    "dateOpen": "2024-10-03",
+    "dateClose": "2026-05-28",
+    "type": "service",
+    "category": "Features",
+    "status": "killed",
+    "description": "Side-by-side writing and coding workspace inside ChatGPT.",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/940028/openai-is-sunsetting-chatgpts-canvas-interface"
+  },
+  {
+    "name": "Sky Voice",
+    "dateOpen": "2024-05-13",
+    "dateClose": "2024-05-19",
+    "type": "service",
+    "category": "Features",
+    "status": "killed",
+    "description": "A ChatGPT voice shown at the GPT-4o demo, paused within days after comparisons to Scarlett Johansson's Her voice sparked a public dispute.",
+    "link": "https://community.openai.com/t/what-happened-to-sky-voice/767325"
+  },
+  {
+    "name": "Computer-Use Model",
+    "dateOpen": "2025-03-11",
+    "dateClose": "2026-07-23",
+    "type": "model",
+    "category": "API & Dev",
+    "status": "killed",
+    "description": "The CUA model behind Operator, exposed as a preview API. The preview snapshot is scheduled for shutdown on July 23, 2026.",
+    "link": "https://developers.openai.com/api/docs/deprecations#2026-04-22-legacy-gpt-model-snapshots"
+  },
+  {
+    "name": "Edits API (/v1/edits)",
+    "dateOpen": "2022-03-15",
+    "dateClose": "2024-01-04",
+    "type": "service",
+    "category": "API & Dev",
+    "status": "killed",
+    "description": "Endpoint for editing text given an instruction. Deprecated in 2023 and shut down January 4, 2024.",
+    "link": "https://developers.openai.com/api/docs/deprecations#edit-models--endpoint"
+  },
+  {
+    "name": "Agent Builder",
+    "dateOpen": "2025-10-06",
+    "dateClose": "2026-11-30",
+    "type": "service",
+    "description": "OpenAI's visual agent-building product for developers. Deprecated on June 3, 2026, with shutdown scheduled for November 30, 2026. ChatKit remains available. Recommended replacement: Agents SDK or ChatGPT Workspace Agents.",
+    "link": "https://developers.openai.com/api/docs/deprecations#2026-06-03-agent-builder"
+  },
   {
     "name": "AI Fine-Tuning",
     "dateOpen": "2023-08-22",
@@ -23,7 +113,6 @@
     "description": "A high-fidelity text-to-video platform. Abruptly shuttered following the collapse of a $1B Disney partnership and a strategic pivot to robotics/IPO prep. Recommended replacement: Google Veo or Kling.",
     "link": "https://qz.com/openai-shut-down-sora-disney-deal"
   },
-  
   {
     "name": "GPT-3.5 Turbo (ChatGPT)",
     "dateOpen": "2023-03-01",
