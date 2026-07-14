@@ -1,45 +1,13 @@
 import Link from 'next/link';
-import styled from '@emotion/styled';
-import { css } from '@emotion/react';
-
-const HeaderContainer = styled.header(() => css({
-    display: 'flex',
-    justifyContent: 'center',
-    padding: '3rem',
-}));
-
-const BrandingContainer = styled.div(() => css({
-    alignItems: 'center',
-    display: 'flex',
-}));
-
-const Logo = styled.div(() => css({
-    display: 'block',
-    marginRight: '1rem',
-    width: '60px',
-}));
-
-const Title = styled.h1(() => css({
-    fontSize: '2.75rem',
-    fontWeight: 'lighter',
-    margin: 0,
-}));
+const repo = 'https://github.com/chippytech/killedbyopenai';
+const issue = `${repo}/issues/new/choose`;
 
 const Header = () => (
-    <HeaderContainer>
-        <Link href="/" passHref>
-            <a rel="noreferrer noopener" css={{
-                borderBottom: 0,
-            }}>
-                <BrandingContainer>
-                        <Logo>
-                            <img width="60px" src="https://static.killedbygoogle.com/com/tombstone.svg" height="60px" alt="Tombstone" />
-                        </Logo>
-                        <Title>Killed by OpenAI</Title>
-                </BrandingContainer>
-            </a>
-        </Link>
-    </HeaderContainer>
+  <header className="site-header">
+    <div className="page-shell header-inner">
+      <Link href="/" passHref><a className="brand" aria-label="Killed by OpenAI home"><span className="brand-mark" aria-hidden="true" /><span>Killed by OpenAI</span></a></Link>
+      <nav aria-label="Primary navigation"><a href="#archive">Archive</a><a href="#about">About</a><a href={issue}>Contribute</a><a href={repo} target="_blank" rel="noopener noreferrer" aria-label="GitHub repository for Killed by OpenAI">GitHub</a></nav>
+    </div>
+  </header>
 );
-
 export default Header;

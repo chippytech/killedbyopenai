@@ -1,0 +1,13 @@
+import slugify from 'slugify';
+import graveyard from '../graveyard.json';
+import { ProductWithSlug, ProductType } from '../types/Product';
+import { filterArchive, formatLifespan, getStatus, sortArchive } from './archive';
+const items = (graveyard as Omit<ProductWithSlug,'slug'>[]).map((item) => ({...item, slug: slugify(item.name, {lower:true})}));
+test('searches by name',()=>{expect(filterArchive(items,'GPT', 'all','all').length).toBeGreaterThan(0)});
+test('searches by description',()=>{expect(filterArchive(items,'dashboard', 'all','all').length).toBeGreaterThan(0)});
+test('filters by type',()=>{expect(filterArchive(items,'', ProductType.MODEL,'all').every(i=>i.type===ProductType.MODEL)).toBe(true)});
+test('filters retired versus scheduled',()=>{expect(filterArchive(items,'','all','scheduled').every(i=>getStatus(i)==='scheduled')).toBe(true)});
+test('sorts by retirement date',()=>{const sorted=sortArchive(items,'recent'); expect(new Date(sorted[0].dateClose).getTime()).toBeGreaterThanOrEqual(new Date(sorted[1].dateClose).getTime())});
+test('sorts by lifespan',()=>{const sorted=sortArchive(items,'shortest'); expect(new Date(sorted[0].dateClose).getTime()-new Date(sorted[0].dateOpen).getTime()).toBeLessThanOrEqual(new Date(sorted[sorted.length-1].dateClose).getTime()-new Date(sorted[sorted.length-1].dateOpen).getTime())});
+test('empty state logic can return zero matches',()=>{expect(filterArchive(items,'definitely absent phrase','all','all')).toHaveLength(0)});
+test('formats lifespan',()=>{expect(formatLifespan({dateOpen:'2023-01-01',dateClose:'2025-03-01'})).toBe('2 years, 2 months')});
