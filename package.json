@@ -1,10 +1,10 @@
 {
-  "name": "killedbygoogle",
+  "name": "killedbyopenai",
   "version": "3.0.0",
-  "description": "killedbygoogle.com",
+  "description": "An independent archive of retired OpenAI products, models, APIs, services, and features.",
   "main": "src/index.js",
-  "repository": "git@github.com:codyogden/killedbygoogle.git",
-  "author": "Cody Ogden",
+  "repository": "git@github.com:chippytech/killedbyopenai.git",
+  "author": "ChippyTech contributors",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.18.2",
@@ -42,7 +42,7 @@
     "preview": "yarn build && next export && npx http-server out/ -p 3000",
     "kill": "bin/kill",
     "lint": "next lint",
-    "test": "jest graveyard.test.ts",
+    "test": "jest graveyard.test.ts utils/archive.test.ts",
     "test:e2e": "playwright test"
   }
 }

@@ -1,6 +1,5 @@
 import { GetStaticProps } from 'next';
 import Head from 'next/head';
-import Script from 'next/script';
 import slugify from 'slugify';
 
 // Data
@@ -19,32 +18,21 @@ const HomePage: React.FC<{ items: ProductWithSlug[] }> = ({ items }) => {
             <Head>
                 <meta charSet="UTF-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5" />
-                <meta name="description" content="Killed by OpenAI is the OpenAI Graveyard. A full list of dead products Killed by OpenAI in the OpenAI Cemetery." />
-                <link rel="shortcut icon" href="favicon.png" />
-                <title>OpenAI Graveyard - Killed by OpenAI</title>
-                <meta name="theme-color" content="#FAFAFA" />
-                <link rel="canonical" href="https://killedbyOpenAI.com" />
-                <meta name="image" content="https://killedbyOpenAI.com/social/card.png"></meta>
-                <meta itemProp="name" content="Killed by OpenAI" />
-                <meta itemProp="description" content="Killed by OpenAI is the OpenAI Graveyard. A full list of dead products Killed by OpenAI in the OpenAI Cemetery." />
-                <meta itemProp="image" content="https://killedbyOpenAI.com/social/card.png" />
+                <title>Killed by OpenAI — An Archive of Retired AI Products</title>
+                <meta name="description" content="An independent archive documenting products, models, APIs, services, and features retired by OpenAI." />
+                <link rel="shortcut icon" href="/favicon.png" />
+                <link rel="canonical" href="https://killedbyopenai.com" />
+                <meta name="theme-color" content="#f2f0e9" />
+                <meta property="og:title" content="Killed by OpenAI — An Archive of Retired AI Products" />
+                <meta property="og:description" content="An independent archive documenting products, models, APIs, services, and features retired by OpenAI." />
+                <meta property="og:url" content="https://killedbyopenai.com" />
+                <meta property="og:site_name" content="Killed by OpenAI" />
+                <meta property="og:type" content="website" />
+                <meta property="og:image" content="https://killedbyopenai.com/social/card.png" />
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Killed by OpenAI" />
-                <meta name="twitter:description" content="Killed by OpenAI is the OpenAI Graveyard. A full list of dead products Killed by OpenAI in the OpenAI Cemetery." />
-                <meta name="twitter:site" content="@killedbyOpenAI" />
-                <meta name="twitter:creator" content="@killedbyOpenAI" />
-                <meta name="twitter:image:src" content="https://killedbyOpenAI.com/social/card-twitter.png" />
-                <meta name="twitter:image" content="https://killedbyOpenAI.com/social/card-twitter.png" />
-                <meta name="og:title" property="og:title" content="Killed by OpenAI" />
-                <meta name="og:url" property="og:url" content="https://killedbyOpenAI.com" />
-                <meta name="og:description" property="og:description" content="Killed by OpenAI is the open source list of dead OpenAI products, services, and devices. It serves as a tribute and memorial of beloved services and products Killed by OpenAI." />
-                <meta name="image" property="og:image" content="https://killedbyOpenAI.com/social/card.png" />
-                <meta name="og:image" property="og:image" content="https://killedbyOpenAI.com/social/card.png" />
-                <meta name="og:site_name" property="og:site_name" content="Killed by OpenAI" />
-                <meta name="og:type" property="og:type" content="website" />
-                <meta name="author" content="Cody Ogden" />
-                <meta name="msvalidate.01" content="0C9605AF449480F57421EECCA9EB2B8A" />
-                <meta name="OpenAI-site-verification" content="9y9dretKdifnWDdkbkT9Qm1PtWMIe3qz6R09Xkm8Cdc" />
+                <meta name="twitter:title" content="Killed by OpenAI — An Archive of Retired AI Products" />
+                <meta name="twitter:description" content="An independent archive documenting products, models, APIs, services, and features retired by OpenAI." />
+                <meta name="twitter:image" content="https://killedbyopenai.com/social/card-twitter.png" />
             </Head>
             <Header />
             <App items={items} />
