@@ -483,16 +483,26 @@
     "description": "Previously reported deprecation of GPT-4 Turbo (API); dates and scope require independent verification against official OpenAI documentation.",
     "link": "https://developers.openai.com/api/docs/deprecations"
   },
-
-{
-  "name": "OpenAI Prism",
-  "dateOpen": "2026-01-27",
-  "dateClose": "2027-01-01",
-  "dateDeprecated": null,
-  "type": "service",
-  "category": "Products",
-  "status": "deprecated",
-  "description": "Free AI-native scientific writing and collaboration workspace powered by GPT-5.2. Supported LaTeX editing, research projects, and collaboration. OpenAI announced its shutdown for January 1, 2027, directing users to export their projects and continue working in Codex. Prism project data will be deleted after shutdown, and some collaborative features will not migrate.",
-  "link": "https://openai.com/index/introducing-prism/"
-}
+  {
+    "name": "OpenAI Prism",
+    "dateOpen": "2026-01-27",
+    "dateClose": "2027-01-01",
+    "dateDeprecated": null,
+    "type": "service",
+    "category": "Products",
+    "status": "deprecated",
+    "description": "Free AI-native scientific writing and collaboration workspace powered by GPT-5.2. Supported LaTeX editing, research projects, and collaboration. OpenAI announced its shutdown for January 1, 2027, directing users to export their projects and continue working in Codex. Prism project data will be deleted after shutdown, and some collaborative features will not migrate.",
+    "link": "https://openai.com/index/introducing-prism/"
+  },
+  {
+    "name": "Custom GPTs (GPT Builder and GPT Store)",
+    "dateOpen": "2023-11-06",
+    "dateClose": "2026-12-11",
+    "dateDeprecated": null,
+    "type": "service",
+    "category": "Features",
+    "status": "deprecated",
+    "description": "Custom GPTs created through ChatGPT's GPT Builder are scheduled to retire December 11, 2026, with February 11, 2027 applying to FedRAMP workspaces and qualifying Enterprise deferrals. OpenAI is directing creators to migrate GPT instructions and knowledge files to plugins. Custom actions do not transfer automatically, and existing GPT conversations remain accessible after retirement.",
+    "link": "https://help.openai.com/en/articles/20001519-custom-gpt-retirement-and-migration-faq"
+  }
 ]
