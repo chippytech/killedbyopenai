@@ -1,5 +1,5 @@
 [
-    {
+  {
     "name": "AI Text Classifier",
     "dateOpen": "2023-01-31",
     "dateClose": "2023-07-20",
@@ -284,5 +284,215 @@
     "type": "service",
     "description": "The industry-standard toolkit for reinforcement learning. OpenAI ceased maintenance in 2021. Recommended replacement: Gymnasium.",
     "link": "https://github.com/openai/gym"
-  }
+  },
+  {
+    "name": "GPT-4o API (Remaining Snapshots)",
+    "dateOpen": null,
+    "dateClose": "2027-01-14",
+    "dateDeprecated": "2026-10-14",
+    "type": "model",
+    "category": "API & Dev",
+    "status": "deprecated",
+    "description": "Previously reported deprecation of GPT-4o API (Remaining Snapshots); dates and scope require independent verification against official OpenAI documentation.",
+    "link": "https://developers.openai.com/api/docs/deprecations"
+  },
+  {
+    "name": "GPT-4o mini API",
+    "dateOpen": null,
+    "dateClose": "2027-01-14",
+    "dateDeprecated": "2026-10-14",
+    "type": "model",
+    "category": "API & Dev",
+    "status": "deprecated",
+    "description": "Previously reported deprecation of GPT-4o mini API; dates and scope require independent verification against official OpenAI documentation.",
+    "link": "https://developers.openai.com/api/docs/deprecations"
+  },
+  {
+    "name": "GPT-4.1 API",
+    "dateOpen": "2025-04-14",
+    "dateClose": "2027-01-14",
+    "dateDeprecated": "2026-10-14",
+    "type": "model",
+    "category": "API & Dev",
+    "status": "deprecated",
+    "description": "Previously reported deprecation of GPT-4.1 API; dates and scope require independent verification against official OpenAI documentation.",
+    "link": "https://developers.openai.com/api/docs/deprecations"
+  },
+  {
+    "name": "GPT-4.1 mini API",
+    "dateOpen": "2025-04-14",
+    "dateClose": "2027-01-14",
+    "dateDeprecated": "2026-10-14",
+    "type": "model",
+    "category": "API & Dev",
+    "status": "deprecated",
+    "description": "Previously reported deprecation of GPT-4.1 mini API; dates and scope require independent verification against official OpenAI documentation.",
+    "link": "https://developers.openai.com/api/docs/deprecations"
+  },
+  {
+    "name": "GPT-5.3-Codex",
+    "dateOpen": null,
+    "dateClose": "2027-04-01",
+    "dateDeprecated": "2026-10-01",
+    "type": "model",
+    "category": "API & Dev",
+    "status": "deprecated",
+    "description": "Previously reported deprecation of GPT-5.3-Codex; dates and scope require independent verification against official OpenAI documentation.",
+    "link": "https://developers.openai.com/api/docs/deprecations"
+  },
+  {
+    "name": "GPT-5.4-Nano",
+    "dateOpen": null,
+    "dateClose": "2027-04-01",
+    "dateDeprecated": "2026-10-01",
+    "type": "model",
+    "category": "API & Dev",
+    "status": "deprecated",
+    "description": "Previously reported deprecation of GPT-5.4-Nano; dates and scope require independent verification against official OpenAI documentation.",
+    "link": "https://developers.openai.com/api/docs/deprecations"
+  },
+  {
+    "name": "GPT-5.1 API",
+    "dateOpen": null,
+    "dateClose": "2027-04-01",
+    "dateDeprecated": "2026-10-01",
+    "type": "model",
+    "category": "API & Dev",
+    "status": "deprecated",
+    "description": "Previously reported deprecation of GPT-5.1 API; dates and scope require independent verification against official OpenAI documentation.",
+    "link": "https://developers.openai.com/api/docs/deprecations"
+  },
+  {
+    "name": "TTS-1 / TTS-1-HD",
+    "dateOpen": "2023-11-06",
+    "dateClose": "2027-01-06",
+    "dateDeprecated": "2026-10-01",
+    "type": "model",
+    "category": "API & Dev",
+    "status": "deprecated",
+    "description": "Previously reported deprecation of TTS-1 / TTS-1-HD; dates and scope require independent verification against official OpenAI documentation.",
+    "link": "https://developers.openai.com/api/docs/deprecations"
+  },
+  {
+    "name": "GPT-4o mini TTS",
+    "dateOpen": null,
+    "dateClose": "2027-01-06",
+    "dateDeprecated": "2026-10-01",
+    "type": "model",
+    "category": "API & Dev",
+    "status": "deprecated",
+    "description": "Previously reported deprecation of GPT-4o mini TTS; dates and scope require independent verification against official OpenAI documentation.",
+    "link": "https://developers.openai.com/api/docs/deprecations"
+  },
+  {
+    "name": "GPT-5.4-Cyber",
+    "dateOpen": null,
+    "dateClose": "2026-10-01",
+    "dateDeprecated": "2026-09-11",
+    "type": "model",
+    "category": "API & Dev",
+    "status": "killed",
+    "description": "Previously reported deprecation of GPT-5.4-Cyber; dates and scope require independent verification against official OpenAI documentation.",
+    "link": "https://developers.openai.com/api/docs/deprecations"
+  },
+  {
+    "name": "Whisper-1 and GPT-4o Transcription Models",
+    "dateOpen": null,
+    "dateClose": "2027-02-26",
+    "dateDeprecated": "2026-08-26",
+    "type": "model",
+    "category": "API & Dev",
+    "status": "deprecated",
+    "description": "Previously reported deprecation of Whisper-1 and GPT-4o Transcription Models; dates and scope require independent verification against official OpenAI documentation.",
+    "link": "https://developers.openai.com/api/docs/deprecations"
+  },
+  {
+    "name": "GPT Realtime and Legacy Audio Models",
+    "dateOpen": null,
+    "dateClose": "2027-01-20",
+    "dateDeprecated": "2026-07-20",
+    "type": "model",
+    "category": "API & Dev",
+    "status": "deprecated",
+    "description": "Previously reported deprecation of GPT Realtime and Legacy Audio Models; dates and scope require independent verification against official OpenAI documentation.",
+    "link": "https://developers.openai.com/api/docs/deprecations"
+  },
+  {
+    "name": "GPT-5 and o3 API Models",
+    "dateOpen": null,
+    "dateClose": "2026-12-11",
+    "dateDeprecated": "2026-06-11",
+    "type": "model",
+    "category": "API & Dev",
+    "status": "deprecated",
+    "description": "Previously reported deprecation of GPT-5 and o3 API Models; dates and scope require independent verification against official OpenAI documentation.",
+    "link": "https://developers.openai.com/api/docs/deprecations"
+  },
+  {
+    "name": "Reusable Prompts API",
+    "dateOpen": null,
+    "dateClose": "2026-11-30",
+    "dateDeprecated": "2026-06-03",
+    "type": "service",
+    "category": "API & Dev",
+    "status": "deprecated",
+    "description": "Previously reported deprecation of Reusable Prompts API; dates and scope require independent verification against official OpenAI documentation.",
+    "link": "https://developers.openai.com/api/docs/deprecations"
+  },
+  {
+    "name": "GPT Image 1.5 / 1 mini / chatgpt-image-latest",
+    "dateOpen": null,
+    "dateClose": "2026-12-01",
+    "dateDeprecated": "2026-06-02",
+    "type": "model",
+    "category": "API & Dev",
+    "status": "deprecated",
+    "description": "Previously reported deprecation of GPT Image 1.5 / 1 mini / chatgpt-image-latest; dates and scope require independent verification against official OpenAI documentation.",
+    "link": "https://developers.openai.com/api/docs/deprecations"
+  },
+  {
+    "name": "GPT-3.5 Turbo (API)",
+    "dateOpen": "2023-03-01",
+    "dateClose": "2026-10-23",
+    "dateDeprecated": "2026-04-22",
+    "type": "model",
+    "category": "API & Dev",
+    "status": "killed",
+    "description": "Previously reported deprecation of GPT-3.5 Turbo (API); dates and scope require independent verification against official OpenAI documentation.",
+    "link": "https://developers.openai.com/api/docs/deprecations"
+  },
+  {
+    "name": "GPT-4 (API)",
+    "dateOpen": "2023-03-14",
+    "dateClose": "2026-10-23",
+    "dateDeprecated": "2026-04-22",
+    "type": "model",
+    "category": "API & Dev",
+    "status": "killed",
+    "description": "Previously reported deprecation of GPT-4 (API); dates and scope require independent verification against official OpenAI documentation.",
+    "link": "https://developers.openai.com/api/docs/deprecations"
+  },
+  {
+    "name": "GPT-4 Turbo (API)",
+    "dateOpen": "2023-11-06",
+    "dateClose": "2026-10-23",
+    "dateDeprecated": "2026-04-22",
+    "type": "model",
+    "category": "API & Dev",
+    "status": "killed",
+    "description": "Previously reported deprecation of GPT-4 Turbo (API); dates and scope require independent verification against official OpenAI documentation.",
+    "link": "https://developers.openai.com/api/docs/deprecations"
+  },
+
+{
+  "name": "OpenAI Prism",
+  "dateOpen": "2026-01-27",
+  "dateClose": "2027-01-01",
+  "dateDeprecated": null,
+  "type": "service",
+  "category": "Products",
+  "status": "deprecated",
+  "description": "Free AI-native scientific writing and collaboration workspace powered by GPT-5.2. Supported LaTeX editing, research projects, and collaboration. OpenAI announced its shutdown for January 1, 2027, directing users to export their projects and continue working in Codex. Prism project data will be deleted after shutdown, and some collaborative features will not migrate.",
+  "link": "https://openai.com/index/introducing-prism/"
+}
 ]
