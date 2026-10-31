@@ -7,21 +7,39 @@ export type ViewMode = 'cards' | 'timeline';
 
 const today = new Date();
 
-export const toDate = (value: string) => new Date(`${value}T00:00:00Z`);
+export const toDate = (value: string | null | undefined): Date => {
+  if (!value || typeof value !== 'string') return new Date(NaN);
+  return new Date(`${value}T00:00:00Z`);
+};
+
+const validDate = (date: Date) => !Number.isNaN(date.getTime());
 
 export const isScheduled = (item: ProductWithSlug, now: Date = today) => toDate(item.dateClose).getTime() > now.getTime();
 
 export const getStatus = (item: ProductWithSlug, now?: Date) => isScheduled(item, now) ? 'scheduled' : 'retired';
 
-export const formatDate = (value: string) => format(toDate(value), 'MMMM d, yyyy');
+export const formatDate = (value: string | null | undefined) => {
+  const date = toDate(value);
+  return validDate(date) ? format(date, 'MMMM d, yyyy') : 'Unknown';
+};
 
-export const formatMonthYear = (value: string) => format(toDate(value), 'MMMM yyyy');
+export const formatMonthYear = (value: string | null | undefined) => {
+  const date = toDate(value);
+  return validDate(date) ? format(date, 'MMMM yyyy') : 'Unknown';
+};
 
-export const lifespanMonths = (item: Pick<ProductWithSlug, 'dateOpen' | 'dateClose'>) =>
-  Math.max(0, differenceInCalendarMonths(toDate(item.dateClose), toDate(item.dateOpen)));
+export const lifespanMonths = (item: Pick<ProductWithSlug, 'dateOpen' | 'dateClose'>): number => {
+  const start = toDate(item.dateOpen);
+  const end = toDate(item.dateClose);
+  if (!validDate(start) || !validDate(end)) return NaN;
+  return Math.max(0, differenceInCalendarMonths(end, start));
+};
 
 export const formatLifespan = (item: Pick<ProductWithSlug, 'dateOpen' | 'dateClose'>) => {
-  const duration = intervalToDuration({ start: toDate(item.dateOpen), end: toDate(item.dateClose) });
+  const start = toDate(item.dateOpen);
+  const end = toDate(item.dateClose);
+  if (!validDate(start) || !validDate(end)) return 'Unknown';
+  const duration = intervalToDuration({ start, end });
   const parts: string[] = [];
   if (duration.years) parts.push(`${duration.years} ${duration.years === 1 ? 'year' : 'years'}`);
   if (duration.months) parts.push(`${duration.months} ${duration.months === 1 ? 'month' : 'months'}`);
@@ -42,9 +60,9 @@ export const filterArchive = (items: ProductWithSlug[], query: string, type: Pro
 export const sortArchive = (items: ProductWithSlug[], sort: SortOption) => [...items].sort((a, b) => {
   switch (sort) {
     case 'oldest': return toDate(a.dateClose).getTime() - toDate(b.dateClose).getTime();
-    case 'newest-launch': return toDate(b.dateOpen).getTime() - toDate(a.dateOpen).getTime();
-    case 'shortest': return lifespanMonths(a) - lifespanMonths(b);
-    case 'longest': return lifespanMonths(b) - lifespanMonths(a);
+    case 'newest-launch': return (validDate(toDate(b.dateOpen)) ? toDate(b.dateOpen).getTime() : -Infinity) - (validDate(toDate(a.dateOpen)) ? toDate(a.dateOpen).getTime() : -Infinity);
+    case 'shortest': return (Number.isFinite(lifespanMonths(a)) ? lifespanMonths(a) : Infinity) - (Number.isFinite(lifespanMonths(b)) ? lifespanMonths(b) : Infinity);
+    case 'longest': return (Number.isFinite(lifespanMonths(b)) ? lifespanMonths(b) : -Infinity) - (Number.isFinite(lifespanMonths(a)) ? lifespanMonths(a) : -Infinity);
     case 'alpha': return a.name.localeCompare(b.name);
     case 'recent':
     default: return toDate(b.dateClose).getTime() - toDate(a.dateClose).getTime();
@@ -52,9 +70,9 @@ export const sortArchive = (items: ProductWithSlug[], sort: SortOption) => [...i
 });
 
 export const getArchiveStats = (items: ProductWithSlug[]) => {
-  const lifespans = items.map(lifespanMonths).sort((a, b) => a - b);
+  const lifespans = items.map(lifespanMonths).filter(Number.isFinite).sort((a, b) => a - b);
   const middle = Math.floor(lifespans.length / 2);
-  const medianMonths = lifespans.length % 2 ? lifespans[middle] : Math.round((lifespans[middle - 1] + lifespans[middle]) / 2);
+  const medianMonths = !lifespans.length ? 0 : lifespans.length % 2 ? lifespans[middle] : Math.round((lifespans[middle - 1] + lifespans[middle]) / 2);
   const latest = sortArchive(items, 'recent')[0];
   return {
     total: items.length,
