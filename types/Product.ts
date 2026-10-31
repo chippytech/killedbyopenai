@@ -7,7 +7,7 @@ export interface Product {
   name: string;
   description: string;
   dateClose: string;
-  dateOpen: string;
+  dateOpen: string | null;
   link: string;
   type: ProductType;
 }
