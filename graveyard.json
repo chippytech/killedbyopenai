@@ -2390,5 +2390,13 @@
     "link": "https://support.google.com/websearch/answer/16767242",
     "description": "Dark Web Reports was a dark web scanner that searched for personal info leaks.",
     "type": "service"
+  },
+  {
+    "name": "ChatGPT Classic",
+    "dateOpen": "2023-03-23",
+    "dateClose": "2027-01-30",
+    "link": "https://9to5mac.com/2026/11/02/openai-is-retiring-chatgpt-classic-app-will-soon-combine-chat-and-work-tabs-in-new-app/",
+    "description": "ChatGPT Classic was the original native macOS desktop app for ChatGPT, replaced by OpenAI's newer unified desktop app.",
+    "type": "app"
   }
 ]
