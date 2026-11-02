@@ -791,7 +791,7 @@
     "description": "OpenAI's o1 reasoning model API, including the o1-2024-12-17 snapshot and o1 alias, was retired on October 23, 2026. OpenAI recommended gpt-5.6-sol as a replacement. Distinct from the earlier o1-preview and o1-mini retirements.",
     "link": "https://developers.openai.com/api/docs/deprecations"
   },
-   {
+  {
     "name": "ChatGPT Classic",
     "dateOpen": "2024-05-13",
     "dateClose": "2027-01-30",
@@ -800,6 +800,4 @@
     "description": "ChatGPT Classic was OpenAI's original native macOS ChatGPT desktop app, renamed in 2026 and scheduled to retire in favor of the unified ChatGPT app.",
     "type": "product"
   }
-]
-
 ]
