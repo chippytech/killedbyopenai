@@ -2393,10 +2393,10 @@
   },
   {
     "name": "ChatGPT Classic",
-    "dateOpen": "2023-03-23",
+    "dateOpen": "2024-05-13",
     "dateClose": "2027-01-30",
     "link": "https://9to5mac.com/2026/11/02/openai-is-retiring-chatgpt-classic-app-will-soon-combine-chat-and-work-tabs-in-new-app/",
-    "description": "ChatGPT Classic was the original native macOS desktop app for ChatGPT, replaced by OpenAI's newer unified desktop app.",
+    "description": "ChatGPT Classic was OpenAI's original native macOS ChatGPT desktop app, renamed in 2026 and scheduled to retire in favor of the unified ChatGPT app.",
     "type": "app"
   }
 ]
