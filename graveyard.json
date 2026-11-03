@@ -799,5 +799,25 @@
     "link": "https://9to5mac.com/2026/11/02/openai-is-retiring-chatgpt-classic-app-will-soon-combine-chat-and-work-tabs-in-new-app/",
     "description": "ChatGPT Classic was OpenAI's original native macOS ChatGPT desktop app, renamed in 2026 and scheduled to retire in favor of the unified ChatGPT app.",
     "type": "product"
+  },
+  {
+    "name": "Completions API (/v1/completions)",
+    "dateOpen": "2022-03-15",
+    "dateClose": "2024-01-04",
+    "type": "service",
+    "category": "API & Dev",
+    "status": "killed",
+    "description": "The foundational text-completion endpoint (housing legacy models like text-davinci-003). Shuttered in favor of the Chat Completions API. Recommended replacement: Chat Completions API (gpt-3.5-turbo / gpt-4o / GPT-5 series).",
+    "link": "https://developers.openai.com/api/docs/deprecations#edit-models--endpoint"
+  },
+  {
+    "name": "text-embedding-ada-002",
+    "dateOpen": "2022-12-12",
+    "dateClose": "2026-06-01",
+    "type": "model",
+    "category": "API & Dev",
+    "status": "killed",
+    "description": "OpenAI's ubiquitous first-generation general embedding model. Phased out as developers migrated entirely to the text-embedding-3-small and text-embedding-3-large architectures. Recommended replacement: text-embedding-3-small.",
+    "link": "https://developers.openai.com/api/docs/deprecations"
   }
 ]
