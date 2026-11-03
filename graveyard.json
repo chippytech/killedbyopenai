@@ -933,7 +933,7 @@
     {
     "name": "ChatGPT Agent (Agent Mode)",
     "dateOpen": "2025-07-17",
-    "dateClose": null,
+    "dateClose": "2026-09-03",
     "type": "service",
     "category": "Features",
     "status": "killed",
