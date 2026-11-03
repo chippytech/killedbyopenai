@@ -819,5 +819,115 @@
     "status": "killed",
     "description": "OpenAI's ubiquitous first-generation general embedding model. Phased out as developers migrated entirely to the text-embedding-3-small and text-embedding-3-large architectures. Recommended replacement: text-embedding-3-small.",
     "link": "https://developers.openai.com/api/docs/deprecations"
+  },
+    {
+    "name": "GPT-4 Vision Preview",
+    "dateOpen": "2023-11-06",
+    "dateClose": "2024-12-06",
+    "type": "model",
+    "category": "API & Dev",
+    "status": "killed",
+    "description": "Preview vision-capable GPT-4 API model retired; developers were directed to newer multimodal GPT models.",
+    "link": "https://platform.openai.com/docs/deprecations"
+  },
+  {
+    "name": "GPT-3.5 Turbo 0613 / 16K",
+    "dateOpen": "2023-06-13",
+    "dateClose": "2024-09-13",
+    "type": "model",
+    "category": "API & Dev",
+    "status": "killed",
+    "description": "Legacy GPT-3.5 Turbo June 2023 snapshots, including the 16K-context variant, retired from the API.",
+    "link": "https://platform.openai.com/docs/deprecations"
+  },
+  {
+    "name": "InstructGPT Legacy Models",
+    "dateOpen": "2022-01-27",
+    "dateClose": "2024-01-04",
+    "type": "model",
+    "category": "API & Dev",
+    "status": "killed",
+    "description": "Legacy instruction-following completion models, including text-ada-001, text-babbage-001, text-curie-001, and text-davinci-003, retired.",
+    "link": "https://platform.openai.com/docs/deprecations"
+  },
+  {
+    "name": "Original GPT-3 Base Models",
+    "dateOpen": null,
+    "dateClose": "2024-01-04",
+    "type": "model",
+    "category": "API & Dev",
+    "status": "killed",
+    "description": "Original ada, babbage, curie, and davinci completion models retired in favor of newer base models.",
+    "link": "https://platform.openai.com/docs/deprecations"
+  },
+  {
+    "name": "First-Generation Text Embedding Models",
+    "dateOpen": null,
+    "dateClose": "2024-01-04",
+    "type": "model",
+    "category": "API & Dev",
+    "status": "killed",
+    "description": "Legacy first-generation embedding models retired in favor of text-embedding-ada-002 and later embedding families.",
+    "link": "https://platform.openai.com/docs/deprecations"
+  },
+  {
+    "name": "Fine-tunes API (/v1/fine-tunes)",
+    "dateOpen": null,
+    "dateClose": "2024-01-04",
+    "type": "service",
+    "category": "API & Dev",
+    "status": "killed",
+    "description": "Legacy fine-tuning endpoint retired in favor of the newer fine-tuning jobs API.",
+    "link": "https://platform.openai.com/docs/deprecations"
+  },
+  {
+    "name": "Assistants API Beta v1",
+    "dateOpen": "2023-11-06",
+    "dateClose": "2024-12-18",
+    "type": "service",
+    "category": "API & Dev",
+    "status": "killed",
+    "description": "First beta version of the Assistants API retired; distinct from the later retirement of the Assistants API as a whole.",
+    "link": "https://platform.openai.com/docs/deprecations"
+  },
+  {
+    "name": "Legacy Search API (/v1/search)",
+    "dateOpen": null,
+    "dateClose": "2022-12-03",
+    "type": "service",
+    "category": "API & Dev",
+    "status": "killed",
+    "description": "Legacy search endpoint retired.",
+    "link": "https://platform.openai.com/docs/deprecations"
+  },
+  {
+    "name": "Classifications API (/v1/classifications)",
+    "dateOpen": null,
+    "dateClose": "2022-12-03",
+    "type": "service",
+    "category": "API & Dev",
+    "status": "killed",
+    "description": "Legacy text classification endpoint retired.",
+    "link": "https://platform.openai.com/docs/deprecations"
+  },
+  {
+    "name": "Answers API (/v1/answers)",
+    "dateOpen": null,
+    "dateClose": "2022-12-03",
+    "type": "service",
+    "category": "API & Dev",
+    "status": "killed",
+    "description": "Legacy question-answering endpoint retired.",
+    "link": "https://platform.openai.com/docs/deprecations"
+  },
+  {
+    "name": "Engines API (/v1/engines)",
+    "dateOpen": null,
+    "dateClose": "2022-12-03",
+    "type": "service",
+    "category": "API & Dev",
+    "status": "killed",
+    "description": "Legacy engines endpoint retired in favor of model-based endpoints.",
+    "link": "https://platform.openai.com/docs/deprecations"
   }
 ]
