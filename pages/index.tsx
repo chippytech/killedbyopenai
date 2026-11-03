@@ -33,6 +33,23 @@ const HomePage: React.FC<{ items: ProductWithSlug[] }> = ({ items }) => {
                 <meta name="twitter:title" content="Killed by OpenAI — An Archive of Retired AI Products" />
                 <meta name="twitter:description" content="An independent archive documenting products, models, APIs, services, and features retired by OpenAI." />
                 <meta name="twitter:image" content="https://killedbyopenai.com/social/card-twitter.png" />
+                <!-- Default Statcounter code for KilledByOpenAI.org
+http://killedbyopenai.org -->
+<script type="text/javascript">
+var sc_project=13364594; 
+var sc_invisible=1; 
+var sc_security="7a5d238d"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/13364594/0/7a5d238d/1/"
+alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
             </Head>
             <Header />
             <App items={items} />
