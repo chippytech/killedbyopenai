@@ -929,5 +929,15 @@
     "status": "killed",
     "description": "Legacy engines endpoint retired in favor of model-based endpoints.",
     "link": "https://platform.openai.com/docs/deprecations"
+  },
+    {
+    "name": "ChatGPT Agent (Agent Mode)",
+    "dateOpen": "2025-07-17",
+    "dateClose": null,
+    "type": "service",
+    "category": "Features",
+    "status": "killed",
+    "description": "ChatGPT agent mode for autonomous multi-step tasks and browser interactions. Retired in 2026; OpenAI directs users to ChatGPT Work for longer tasks and supported cloud-browser workflows. Exact shutdown date not confirmed.",
+    "link": "https://help.openai.com/en/articles/11752874-chatgpt-agent"
   }
 ]
