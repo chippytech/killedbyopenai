@@ -14,7 +14,7 @@ export const toDate = (value: string | null | undefined): Date => {
 
 const validDate = (date: Date) => !Number.isNaN(date.getTime());
 
-export const isScheduled = (item: ProductWithSlug, now: Date = today) => toDate(item.dateClose).getTime() > now.getTime();
+export const isScheduled = (item: ProductWithSlug, now: Date = today) => !item.dateClose || toDate(item.dateClose).getTime() > now.getTime();
 
 export const getStatus = (item: ProductWithSlug, now?: Date) => isScheduled(item, now) ? 'scheduled' : 'retired';
 
@@ -59,13 +59,13 @@ export const filterArchive = (items: ProductWithSlug[], query: string, type: Pro
 
 export const sortArchive = (items: ProductWithSlug[], sort: SortOption) => [...items].sort((a, b) => {
   switch (sort) {
-    case 'oldest': return toDate(a.dateClose).getTime() - toDate(b.dateClose).getTime();
+    case 'oldest': return (validDate(toDate(a.dateClose)) ? toDate(a.dateClose).getTime() : Infinity) - (validDate(toDate(b.dateClose)) ? toDate(b.dateClose).getTime() : Infinity);
     case 'newest-launch': return (validDate(toDate(b.dateOpen)) ? toDate(b.dateOpen).getTime() : -Infinity) - (validDate(toDate(a.dateOpen)) ? toDate(a.dateOpen).getTime() : -Infinity);
     case 'shortest': return (Number.isFinite(lifespanMonths(a)) ? lifespanMonths(a) : Infinity) - (Number.isFinite(lifespanMonths(b)) ? lifespanMonths(b) : Infinity);
     case 'longest': return (Number.isFinite(lifespanMonths(b)) ? lifespanMonths(b) : -Infinity) - (Number.isFinite(lifespanMonths(a)) ? lifespanMonths(a) : -Infinity);
     case 'alpha': return a.name.localeCompare(b.name);
     case 'recent':
-    default: return toDate(b.dateClose).getTime() - toDate(a.dateClose).getTime();
+    default: return (validDate(toDate(b.dateClose)) ? toDate(b.dateClose).getTime() : -Infinity) - (validDate(toDate(a.dateClose)) ? toDate(a.dateClose).getTime() : -Infinity);
   }
 });
 
@@ -88,7 +88,7 @@ export const getArchiveStats = (items: ProductWithSlug[]) => {
 };
 
 export const groupByCloseYear = (items: ProductWithSlug[]) => items.reduce<Record<string, ProductWithSlug[]>>((groups, item) => {
-  const year = toDate(item.dateClose).getUTCFullYear().toString();
+  const year = validDate(toDate(item.dateClose)) ? toDate(item.dateClose).getUTCFullYear().toString() : 'Unknown';
   groups[year] = [...(groups[year] || []), item];
   return groups;
 }, {});
