@@ -65,7 +65,7 @@ export const getStaticProps: GetStaticProps = async (_context) => {
         slug: slugify(item.name, {
             lower: true,
         })
-    })).sort((a, b) => (new Date(b.dateClose)).getTime() - (new Date(a.dateClose)).getTime());
+    })).sort((a, b) => (b.dateClose ? new Date(b.dateClose).getTime() : -Infinity) - (a.dateClose ? new Date(a.dateClose).getTime() : -Infinity));
 
     return {
         props: {
