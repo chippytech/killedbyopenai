@@ -6,7 +6,7 @@ export enum ProductType {
 export interface Product {
   name: string;
   description: string;
-  dateClose: string;
+  dateClose: string | null;
   dateOpen: string | null;
   link: string;
   type: ProductType;
