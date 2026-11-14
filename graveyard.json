@@ -820,7 +820,7 @@
     "description": "OpenAI's ubiquitous first-generation general embedding model. Phased out as developers migrated entirely to the text-embedding-3-small and text-embedding-3-large architectures. Recommended replacement: text-embedding-3-small.",
     "link": "https://developers.openai.com/api/docs/deprecations"
   },
-    {
+  {
     "name": "GPT-4 Vision Preview",
     "dateOpen": "2023-11-06",
     "dateClose": "2024-12-06",
@@ -930,7 +930,7 @@
     "description": "Legacy engines endpoint retired in favor of model-based endpoints.",
     "link": "https://platform.openai.com/docs/deprecations"
   },
-    {
+  {
     "name": "ChatGPT Agent (Agent Mode)",
     "dateOpen": "2025-07-17",
     "dateClose": "2026-09-03",
@@ -939,5 +939,60 @@
     "status": "killed",
     "description": "ChatGPT agent mode for autonomous multi-step tasks and browser interactions. Retired in 2026; OpenAI directs users to ChatGPT Work for longer tasks and supported cloud-browser workflows. Exact shutdown date not confirmed.",
     "link": "https://help.openai.com/en/articles/11752874-chatgpt-agent"
+  },
+  {
+    "name": "GPT-5.5 (ChatGPT, Work, and Codex)",
+    "dateOpen": null,
+    "dateClose": null,
+    "dateDeprecated": "2026-10-14",
+    "type": "model",
+    "category": "Products",
+    "status": "deprecated",
+    "description": "On October 14, 2026, OpenAI announced the retirement of GPT-5.5 from ChatGPT, ChatGPT Work, and Codex. API access is not affected. An effective removal date is not specified in the official model release notes.",
+    "link": "https://help.openai.com/en/articles/9624314-model-release-notes"
+  },
+  {
+    "name": "GPT-5.5-Cyber Preview (API)",
+    "dateOpen": null,
+    "dateClose": "2027-02-01",
+    "dateDeprecated": "2026-11-05",
+    "type": "model",
+    "category": "API & Dev",
+    "status": "deprecated",
+    "description": "The gpt-5.5-cyber-preview API model was deprecated November 5, 2026 and is scheduled to be removed February 1, 2027. OpenAI recommends migrating to the most capable cyber model available to the developer.",
+    "link": "https://developers.openai.com/api/docs/deprecations"
+  },
+  {
+    "name": "GPT Image 2 (API)",
+    "dateOpen": "2026-04-21",
+    "dateClose": "2027-02-10",
+    "dateDeprecated": "2026-11-10",
+    "type": "model",
+    "category": "API & Dev",
+    "status": "deprecated",
+    "description": "The gpt-image-2 model and gpt-image-2-2026-04-21 snapshot were deprecated November 10, 2026, with API removal scheduled for February 10, 2027. Recommended replacements: gpt-image-2.6-sunburst or gpt-image-2.6-flare.",
+    "link": "https://developers.openai.com/api/docs/deprecations"
+  },
+  {
+    "name": "ChatGPT Advanced Voice Mode",
+    "dateOpen": null,
+    "dateClose": "2026-12-11",
+    "dateDeprecated": "2026-11-10",
+    "type": "service",
+    "category": "Features",
+    "status": "deprecated",
+    "description": "OpenAI announced November 10, 2026 that Advanced Voice will no longer be selectable in ChatGPT starting December 11, 2026; GPT-Live replaces it for ordinary voice chats. Advanced Voice continues to support live video and screen sharing until GPT-Live supports those features.",
+    "link": "https://help.openai.com/en/articles/20001638-retiring-advanced-and-standard-voice-in-chatgpt"
+  },
+  {
+    "name": "ChatGPT Standard Voice Mode",
+    "dateOpen": null,
+    "dateClose": "2026-12-11",
+    "dateDeprecated": "2026-11-10",
+    "type": "service",
+    "category": "Features",
+    "status": "deprecated",
+    "description": "OpenAI announced November 10, 2026 that the legacy Standard Voice mode will no longer be selectable in ChatGPT on December 11, 2026. Existing conversations remain available, with voice defaulting to GPT-Live.",
+    "link": "https://help.openai.com/en/articles/20001638-retiring-advanced-and-standard-voice-in-chatgpt"
   }
 ]
